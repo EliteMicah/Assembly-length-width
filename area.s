@@ -99,7 +99,6 @@ main:
     movq $0x1, %rdx         # length of the message    
     int  $0x80              # system interrupt to kernel
 
-end:
 # Exit with return 0
 	movl $1, %eax       # exit(0) - $1 is sys_exit    
 	movl $0, %ebx       # 0 is return value    
